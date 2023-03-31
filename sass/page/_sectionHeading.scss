@@ -1,0 +1,27 @@
+.sectionHeading {
+  position: relative;
+  z-index: 50;
+
+  .headingContainer {
+    max-width: 100rem;
+    margin-inline: auto;
+    padding: 12rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner {
+    position: absolute;
+    bottom: -25%;
+    right: 3rem;
+    margin-left: auto;
+    z-index: 100;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

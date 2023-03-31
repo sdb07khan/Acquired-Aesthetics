@@ -1,0 +1,32 @@
+.featured {
+  padding: 4rem 8%;
+
+  .featuredContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .featuredTextBox {
+      min-width: 16rem;
+
+      .featuredText {
+        font-family: var(--primary-font);
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+
+    .featuredLogoBox {
+      .featuredLogoList {
+        display: flex;
+        .featuredLogo {
+          img {
+            width: 100%;
+            height: 4rem;
+          }
+        }
+      }
+    }
+  }
+}

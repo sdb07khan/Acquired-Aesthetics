@@ -1,0 +1,292 @@
+:root {
+  --black-0: #060616;
+  --black-1: #1f1f22;
+  --white-0: #f9f8f9;
+  --white-1: #ffffff;
+  --white-2: #dddddd;
+  --neon-0: #c1fd3a;
+  --primary-font: "Montserrat", sans-serif;
+  --heading-font: "Oswald", sans-serif; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: var(--white-0); }
+
+.cardBlack {
+  background-color: var(--black-0); }
+
+.cardNeon {
+  background-color: var(--neon-0); }
+
+.headingParaBlack {
+  font-family: var(--primary-font);
+  font-size: 2.4rem;
+  font-weight: 300;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  color: var(--black-0); }
+
+.headingBlack {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 12rem;
+  color: var(--black-0);
+  text-transform: uppercase;
+  letter-spacing: -0.5rem;
+  line-height: 1; }
+
+.headingBlackMedium {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 10rem;
+  color: var(--black-0);
+  text-transform: uppercase;
+  letter-spacing: -0.5rem;
+  line-height: 1; }
+
+.headingHollow {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 12rem;
+  color: transparent;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: var(--black-0);
+  letter-spacing: -0.5rem;
+  line-height: 1; }
+
+.headingHollowMedium {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 10rem;
+  color: transparent;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: var(--black-0);
+  letter-spacing: -0.5rem;
+  line-height: 1; }
+
+.heading5White {
+  font-family: var(--primary-font);
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--white-0); }
+
+.heading5Black {
+  font-family: var(--primary-font);
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--black-0); }
+
+.heading6Black {
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--black-0);
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-decoration: none; }
+
+.cardParaBlack {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--black-0);
+  padding: 1rem 0; }
+
+.cardParaWhite {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--white-0);
+  padding: 1rem 0; }
+
+.workCardPara {
+  font-family: var(--primary-font);
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: var(--black-0); }
+
+.buttonBlack {
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--black-0);
+  color: var(--white-0);
+  padding: 1.5rem 2rem;
+  border-radius: 30px;
+  transition: all 0.2s;
+  letter-spacing: 1px; }
+  .buttonBlack:hover {
+    background-color: var(--white-1);
+    color: var(--black-0); }
+
+.buttonNeonSlim {
+  text-decoration: none;
+  background-color: var(--neon-0);
+  color: var(--black-0);
+  padding: 1.5rem 2rem;
+  border-radius: 30px;
+  transition: all 0.2s;
+  font-family: var(--primary-font);
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+  .buttonNeonSlim:hover {
+    background-color: var(--black-0);
+    color: var(--white-0); }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(2px); }
+  .header .headerContainer {
+    padding: 2rem 3rem 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .headerContainer .headerBrand .brandTitleLink .titleImage {
+      width: 100%;
+      height: 5rem; }
+    .header .headerContainer .headerNav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 4rem; }
+      .header .headerContainer .headerNav .navButton .navButton__link svg {
+        stroke-opacity: 0;
+        width: 100%;
+        height: 2rem;
+        fill: var(--black-1); }
+
+.featured {
+  padding: 4rem 8%; }
+  .featured .featuredContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .featured .featuredContainer .featuredTextBox {
+      min-width: 16rem; }
+      .featured .featuredContainer .featuredTextBox .featuredText {
+        font-family: var(--primary-font);
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: uppercase; }
+    .featured .featuredContainer .featuredLogoBox .featuredLogoList {
+      display: flex; }
+      .featured .featuredContainer .featuredLogoBox .featuredLogoList .featuredLogo img {
+        width: 100%;
+        height: 4rem; }
+
+.sectionHeading {
+  position: relative;
+  z-index: 50; }
+  .sectionHeading .headingContainer {
+    max-width: 100rem;
+    margin-inline: auto;
+    padding: 12rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .sectionHeading .banner {
+    position: absolute;
+    bottom: -25%;
+    right: 3rem;
+    margin-left: auto;
+    z-index: 100;
+    transition: all 0.2s ease-in; }
+    .sectionHeading .banner:hover {
+      transform: scale(1.05); }
+
+.marketing .marketingContainer {
+  display: flex;
+  gap: 4rem;
+  padding: 5rem 8%; }
+  .marketing .marketingContainer .marketingStrategy {
+    max-width: 60%; }
+  .marketing .marketingContainer .marketingCardContainer .marketingCardBox .marketingCard {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    transform: scale(0.95);
+    transition: all 0.3s ease-in; }
+    .marketing .marketingContainer .marketingCardContainer .marketingCardBox .marketingCard:hover {
+      transform: scale(1); }
+    .marketing .marketingContainer .marketingCardContainer .marketingCardBox .marketingCard .cardItems {
+      padding: 2rem; }
+      .marketing .marketingContainer .marketingCardContainer .marketingCardBox .marketingCard .cardItems .cardIcon {
+        background-color: var(--white-0); }
+
+.scrollImage .scrollImageContainer .scrollImageBox {
+  overflow-x: hidden; }
+
+.scrollImage .descriptionBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+  margin-top: 8rem;
+  margin-bottom: 4rem; }
+  .scrollImage .descriptionBox .descriptionHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .scrollImage .descriptionBox .descriptionPara {
+    padding: 3rem 10%; }
+
+.scrollImage .runningLogo {
+  overflow-x: hidden;
+  padding-bottom: 10rem; }
+
+.ourWork .ourWorkContainer .headingBox {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .ourWork .ourWorkContainer .headingBox .workHeading {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 30rem;
+    color: var(--black-0);
+    text-transform: uppercase;
+    line-height: 0.9;
+    letter-spacing: -0.5rem; }
+
+.ourWork .ourWorkContainer .workCardSlideContainer {
+  position: relative;
+  height: 90vh; }
+  .ourWork .ourWorkContainer .workCardSlideContainer .workCardSlideBox {
+    position: absolute;
+    left: 0;
+    top: -10rem;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex; }
+    .ourWork .ourWorkContainer .workCardSlideContainer .workCardSlideBox .workCardBox {
+      width: min-content;
+      margin-left: 4rem; }
+      .ourWork .ourWorkContainer .workCardSlideContainer .workCardSlideBox .workCardBox .cardImageBox .cardImage {
+        height: 70vh;
+        width: auto;
+        overflow: hidden;
+        border-radius: 6px; }
+
+.ourWork .ourWorkContainer .workButton {
+  width: 100%;
+  display: flex;
+  justify-content: center; }

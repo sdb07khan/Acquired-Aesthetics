@@ -1,0 +1,67 @@
+.ourWork {
+  .ourWorkContainer {
+    .headingBox {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .workHeading {
+        font-family: var(--heading-font);
+        font-weight: 600;
+        font-size: 30rem;
+        color: var(--black-0);
+        text-transform: uppercase;
+        line-height: 0.9;
+        letter-spacing: -0.5rem;
+      }
+    }
+
+    .workCardSlideContainer {
+      position: relative;
+      height: 90vh;
+
+      .workCardSlideBox {
+        position: absolute;
+        left: 0;
+        top: -10rem;
+        width: 100%;
+        overflow-x: hidden;
+        display: flex;
+
+        .workCardBox {
+          width: min-content;
+          margin-left: 4rem;
+
+          .cardLink {
+          }
+
+          .cardImageBox {
+            .cardImage {
+              height: 70vh;
+              width: auto;
+              overflow: hidden;
+              border-radius: 6px;
+            }
+          }
+
+          .cardDescription {
+            .CardHeading {
+            }
+
+            .cardPara {
+            }
+          }
+        }
+      }
+    }
+
+    .workButton {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      &__link {
+      }
+    }
+  }
+}

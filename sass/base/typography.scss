@@ -1,0 +1,91 @@
+.headingBlack {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 12rem;
+  color: var(--black-0);
+  text-transform: uppercase;
+  letter-spacing: -0.5rem;
+  line-height: 1;
+}
+
+.headingBlackMedium {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 10rem;
+  color: var(--black-0);
+  text-transform: uppercase;
+  letter-spacing: -0.5rem;
+  line-height: 1;
+}
+
+.headingHollow {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 12rem;
+  color: transparent;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: var(--black-0);
+  letter-spacing: -0.5rem;
+  line-height: 1;
+}
+
+.headingHollowMedium {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 10rem;
+  color: transparent;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: var(--black-0);
+  letter-spacing: -0.5rem;
+  line-height: 1;
+}
+
+.heading5White {
+  font-family: var(--primary-font);
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--white-0);
+}
+
+.heading5Black {
+  font-family: var(--primary-font);
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--black-0);
+}
+
+.heading6Black {
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--black-0);
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-decoration: none;
+}
+
+.cardParaBlack {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--black-0);
+  padding: 1rem 0;
+}
+
+.cardParaWhite {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--white-0);
+  padding: 1rem 0;
+}
+
+.workCardPara {
+  font-family: var(--primary-font);
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: var(--black-0);
+}

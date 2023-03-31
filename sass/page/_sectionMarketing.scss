@@ -1,0 +1,51 @@
+.marketing {
+  .marketingContainer {
+    display: flex;
+    gap: 4rem;
+    padding: 5rem 8%;
+
+    .marketingStrategy {
+      max-width: 60%;
+
+      &__heading {
+      }
+
+      &__description {
+      }
+
+      &__button {
+        &--link {
+        }
+      }
+    }
+
+    .marketingCardContainer {
+      .marketingCardBox {
+        .marketingCard {
+          margin-bottom: 1rem;
+          border-radius: 10px;
+          transform: scale(0.95);
+          transition: all 0.3s ease-in;
+
+          &:hover {
+            transform: scale(1);
+          }
+
+          .cardItems {
+            padding: 2rem;
+
+            .cardIcon {
+              background-color: var(--white-0);
+            }
+
+            .cardHeading {
+            }
+
+            .cardPara {
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.scrollImage {
+  .scrollImageContainer {
+    .scrollImageBox {
+      overflow-x: hidden;
+    }
+  }
+
+  .descriptionBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+
+    .descriptionHeading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .descriptionPara {
+      padding: 3rem 10%;
+    }
+  }
+
+  .runningLogo {
+    overflow-x: hidden;
+    padding-bottom: 10rem;
+
+    .runningLogoBox {
+    }
+  }
+}
