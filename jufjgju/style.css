@@ -290,29 +290,27 @@ body {
       display: flex; }
     .scrollImage .scrollImageContainer .scrollImageBox .scrollImageFour {
       display: flex; }
-
-.scrollImage .descriptionBox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-inline: auto;
-  margin-top: 8rem;
-  margin-bottom: 4rem; }
-  .scrollImage .descriptionBox .descriptionHeading {
+  .scrollImage .scrollImageContainer .descriptionBox {
     display: flex;
     flex-direction: column;
-    align-items: center; }
-  .scrollImage .descriptionBox .descriptionPara {
-    padding: 3rem 10%; }
-
-.scrollImage .runningLogo {
-  overflow-x: hidden;
-  padding-bottom: 10rem;
-  width: 100%;
-  display: flex;
-  transition: 300ms ease; }
-  .scrollImage .runningLogo .runningLogoBox {
-    animation: marquee 20s linear infinite; }
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 8rem;
+    margin-bottom: 4rem; }
+    .scrollImage .scrollImageContainer .descriptionBox .descriptionHeading {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .scrollImage .scrollImageContainer .descriptionBox .descriptionPara {
+      padding: 3rem 10%; }
+  .scrollImage .scrollImageContainer .runningLogo {
+    overflow-x: hidden;
+    padding-bottom: 10rem;
+    width: 100%;
+    display: flex;
+    transition: 300ms ease; }
+    .scrollImage .scrollImageContainer .runningLogo .runningLogoBox {
+      animation: marquee 20s linear infinite; }
 
 .ourWork .ourWorkContainer .headingBox {
   width: 100%;

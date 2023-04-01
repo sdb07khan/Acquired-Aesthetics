@@ -14,14 +14,19 @@
 
   .banner {
     position: absolute;
-    bottom: -25%;
+    bottom: -12rem;
     right: 3rem;
     margin-left: auto;
     z-index: 100;
     transition: all 0.2s ease-in;
+    overflow: hidden;
 
     &:hover {
       transform: scale(1.05);
+    }
+
+    .banner__image {
+      border-radius: 50%;
     }
   }
 }

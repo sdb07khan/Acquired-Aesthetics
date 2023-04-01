@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="icon" type="image/svg" sizes="32x32" href="img/brand_logo.svg" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Acquired Aesthetic® – ACQ AEST™ | Impactful Web Experiences</title>
@@ -88,11 +95,59 @@
 
       <section class="featured">
         <div class="featuredContainer">
-          <div class="featuredTextBox">
-            <p class="featuredText">Featured In</p>
+          <div class="featuredTextContainer">
+            <div class="featuredTextBox">
+              <p class="featuredText">Featured In</p>
+            </div>
           </div>
+
           <div class="featuredLogoBox">
             <div class="featuredLogoList">
+              <div class="featuredLogo">
+                <img
+                  src="img/Bloomberg_logo.svg"
+                  alt="Bloomberg Logo"
+                  class="featuredLogo__image"
+                />
+              </div>
+              <div class="featuredLogo">
+                <img
+                  src="img/Awwards_logo.svg"
+                  alt="Bloomberg Logo"
+                  class="featuredLogo__image"
+                />
+              </div>
+              <div class="featuredLogo">
+                <img
+                  src="img/Business_insider.svg"
+                  alt="Bloomberg Logo"
+                  class="featuredLogo__image"
+                />
+              </div>
+              <div class="featuredLogo">
+                <img
+                  src="img/CBS_logo.svg"
+                  alt="Bloomberg Logo"
+                  class="featuredLogo__image"
+                />
+              </div>
+              <div class="featuredLogo">
+                <img
+                  src="img/Highsnobiety_logo.svg"
+                  alt="Bloomberg Logo"
+                  class="featuredLogo__image"
+                />
+              </div>
+              <div class="featuredLogo">
+                <img
+                  src="img/Yahoo_logo.svg"
+                  alt="Bloomberg Logo"
+                  class="featuredLogo__image"
+                />
+              </div>
+            </div>
+
+            <div aria-hidden="true" class="featuredLogoList">
               <div class="featuredLogo">
                 <img
                   src="img/Bloomberg_logo.svg"
@@ -171,7 +226,22 @@
               <div class="marketingCard cardBlack">
                 <div class="cardItems">
                   <div class="cardIcon">
-                    <i aria-hidden="true" class="fal fa-desktop"></i>
+                    <svg
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      ></path>
+                    </svg>
                   </div>
                   <h5 class="cardHeading heading5White">
                     <span> On-demand digital design & web development </span>
@@ -188,7 +258,19 @@
               <div class="marketingCard cardNeon">
                 <div class="cardItems">
                   <div class="cardIcon">
-                    <i aria-hidden="true" class="fal fa-desktop"></i>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 37.143L77.896 343.853h356.208zM230.154 49.79L72 164.233v157.91zm51.69 0L440 322.144V164.232zm-132.516 90.02v21.786l-8.486 9.68v-16.942c-2.772 3.24-5.692 6.367-8.385 9.664 3.536.293 2.484 5.43 2.207 7.752-1.746 9.536-8.154 17.575-13.404 24.79-1.943 2.544-3.943 5.075-6.008 7.507-4.65 3.4-8.49 4.39-10.775-1.463.294-7.806 3.84-15.22 8.046-20.967l5.288-7.918c-.048 2.462.1 4.97-.072 7.405-2.34 4.347-6.766 9.46-5.758 14.608 7.76.874 12.22-10.863 14.522-16.58.832-2.76 2.108-5.458-1.418-5.434v-7.264zm212.13 1.21l44.853 54.464v7.262l-30.304-36.31v8.472l-6.06-7.262c-.155-4.15-1.424-8.377-2.425-12.103-1.86-2.936-3.96-5.704-6.06-8.47zM256.07 203.86c8.37 0 14.733 1.53 19.088 4.587 4.355 3.027 6.533 7.475 6.533 13.344 0 3.924-1.08 7.198-3.243 9.823-2.13 2.626-5.297 4.572-9.498 5.838 4.694 1.298 8.23 3.415 10.61 6.35 2.408 2.902 3.614 6.576 3.614 11.024 0 6.857-2.286 12.047-6.858 15.57-4.54 3.49-11.288 5.233-20.246 5.233-8.988 0-15.784-1.744-20.386-5.234-4.572-3.522-6.858-8.712-6.858-15.57 0-4.447 1.19-8.12 3.57-11.024 2.408-2.935 5.96-5.052 10.655-6.35-4.2-1.265-7.366-3.21-9.497-5.837-2.13-2.625-3.198-5.9-3.198-9.822 0-5.837 2.18-10.285 6.534-13.343 4.354-3.058 10.748-4.586 19.18-4.586zm0 11.212c-2.84 0-5.035.742-6.58 2.225-1.513 1.482-2.27 3.583-2.27 6.3 0 2.75.757 4.866 2.27 6.348 1.545 1.483 3.74 2.225 6.58 2.225 2.78 0 4.926-.742 6.44-2.225 1.513-1.482 2.27-3.598 2.27-6.347 0-2.75-.757-4.85-2.27-6.3-1.514-1.484-3.66-2.226-6.44-2.226zm0 28.262c-3.336 0-5.9.912-7.69 2.734-1.793 1.823-2.69 4.433-2.69 7.83 0 3.398.897 6.008 2.69 7.83 1.79 1.792 4.354 2.688 7.69 2.688 3.305 0 5.837-.896 7.598-2.687 1.76-1.824 2.64-4.434 2.64-7.832 0-3.428-.88-6.038-2.64-7.83-1.76-1.822-4.293-2.734-7.598-2.734zM88.7 359.852L256 480.912l167.3-121.06zm139.42 23.23h54.548v4.842c-14.406 5.942-21.582 12.897-27.88 25.416h-15.76c7.104-13.803 14.546-17.714 26.67-25.416h-37.58z"
+                      ></path>
+                    </svg>
                   </div>
                   <h5 class="cardHeading heading5Black">
                     <span>Highly branded, stand-out designs</span>
@@ -205,7 +287,19 @@
               <div class="marketingCard cardBlack">
                 <div class="cardItems">
                   <div class="cardIcon">
-                    <i aria-hidden="true" class="fal fa-desktop"></i>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M144.938 18.063l8.437 19.187c17.36 39.43 27.86 79.965 32.563 120.313-50.01 4.028-99.724 4.15-144.688 1.656l-21.188-1.19L33.5 174.438c42.232 51.6 93.612 82.498 148.438 110.907-12.137 69.664-39.726 134.1-77.282 185.312L92 487.906l21.25-2.437c99.754-11.457 177.9-51.146 236.688-106.064 33.06 23.513 65.993 52.01 98.093 88.97l15.095 17.374 1.28-22.97c3.558-63.803-8.63-128.11-33.655-187.53 37.76-67.647 57.985-143.224 63.563-214.656l2-25.532-17.97 18.22c-35.647 36.18-86.34 61.284-143.468 78.124-46.935-47.74-104.638-85.32-170.03-106.812l-19.907-6.532zm82.75 65.312c10.37.018 23.587 4.884 39.312 14.47 16.552 11.965 32.193 25.124 46.813 39.31-35.065 8.896-72.027 14.882-109.188 18.626-1.033-8.865-2.353-17.75-3.938-26.624-.003-.02.004-.042 0-.062-.856-30.68 8.666-45.75 27-45.72zm183.062 46.688c30.66-.583 46.988 17.807 38.875 56.343-7.78 22.997-17.28 45.628-28.594 67.47-18.614-38.538-42.71-74.62-71.436-106.75 12.818-4.06 25.32-8.585 37.437-13.564 8.605-2.196 16.553-3.363 23.72-3.5zm-81.313 22.968c33.327 35.83 60.508 77.187 80.282 121.47-9.032 15.405-19.007 30.317-30 44.563-7.257 9.4-15.006 18.48-23.158 27.25-21.106-6.102-43.19-14.988-60.812-23-.074-.034-.144-.06-.22-.094-19.852-11.155-39.46-21.245-58.624-30.908-11.675-5.886-22.84-11.594-34.125-17.343 4.355-30.108 5.87-61.04 4.126-92.283 25.76-7.15 54.416-13.28 78.313-19.25 14.972-2.99 29.75-6.43 44.217-10.406zm-39.843 32.657c-.847-.002-1.68.018-2.5.063-6.556.363-12.224 2.22-16.813 5.125-9.177 5.81-15.155 16.127-15.155 32.063 0 31.87 28.156 70.8 61 82.812 16.422 6.007 29.822 4.435 39-1.375s15.156-16.127 15.156-32.063c0-31.87-28.124-70.767-60.967-82.78-7.185-2.63-13.79-3.828-19.72-3.845zm-101.22 2.532c1.17 26.25-.064 52.25-3.374 77.686-8.285-4.346-16.454-8.732-24.47-13.25-45.842-30.138-18.07-49.58 27.845-64.437zm11.095 106.03c9.662 4.89 19.185 9.8 29 14.75 34.664 17.48 70.195 36.024 105.686 59.625-6.714 6.15-13.702 12.07-20.937 17.78-66.568 32.47-115.528 2.77-118.25-70.78 1.656-7.067 3.155-14.187 4.5-21.375zm219.124 1.53c3.838 9.98 7.273 20.084 10.344 30.283 3.064 27.392-20.972 31.225-51.75 25.312 6.026-6.788 11.806-13.74 17.312-20.875 8.65-11.207 16.628-22.84 24.094-34.72z"
+                      ></path>
+                    </svg>
                   </div>
                   <h5 class="cardHeading heading5White">
                     <span>Engaging Animation & Interaction</span>
@@ -222,7 +316,20 @@
               <div class="marketingCard cardNeon">
                 <div class="cardItems">
                   <div class="cardIcon">
-                    <i aria-hidden="true" class="fal fa-desktop"></i>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 16 16"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"
+                      ></path>
+                    </svg>
                   </div>
                   <h5 class="cardHeading heading5Black">
                     <span>Ongoing strategic optimization</span>
@@ -245,8 +352,10 @@
           <div class="scrollImageBox">
             <div class="scrollImageOne">
               <img src="img/slide1.png" alt="scroll Image 1" />
+              <img src="img/slide1.png" alt="scroll Image 1" />
             </div>
             <div class="scrollImageTwo">
+              <img src="img/slide2.png" alt="scroll Image 2" />
               <img src="img/slide2.png" alt="scroll Image 2" />
             </div>
           </div>
@@ -269,13 +378,21 @@
         <div class="runningLogo">
           <div class="runningLogoBox">
             <div
-              class="qodef-m-image qodef-image--original"
+              class="allLogos"
               style="
                 background: url('https://acquiredaesthetic.com/wp-content/uploads/2023/02/full-stack-icons-1.svg');
                 width: 3000px;
                 height: 150px;
-                animation: qode-move-horizontal-normal-image-marquee 20s linear
-                  infinite;
+              "
+            ></div>
+          </div>
+          <div aria-hidden="true" class="runningLogoBox">
+            <div
+              class="allLogos"
+              style="
+                background: url('https://acquiredaesthetic.com/wp-content/uploads/2023/02/full-stack-icons-1.svg');
+                width: 3000px;
+                height: 150px;
               "
             ></div>
           </div>
@@ -290,189 +407,158 @@
           <div class="workCardSlideContainer">
             <div class="workCardSlideBox">
               <div class="workCardBox">
-                <a href="#" class="cardLink"></a>
-                <div class="cardImageBox">
-                  <img
-                    src="img/tennis_img.jpg"
-                    alt="Tennis"
-                    class="cardImage"
-                  />
-                </div>
-                <div class="cardDescription">
-                  <h6 class="cardHeading heading6Black">
-                    <a
-                      href="#"
-                      style="text-decoration: none; color: var(--black-0)"
-                      >STEFANOS TSITSIPAS</a
-                    >
-                  </h6>
-                  <p class="cardPara workCardPara">
-                    Web design + WordPress development for a world-renowned
-                    athlete
-                  </p>
-                </div>
+                <a href="#" class="cardLink">
+                  <div class="cardImageBox">
+                    <img
+                      src="img/tennis_img.jpg"
+                      alt="Tennis"
+                      class="cardImage"
+                    />
+                  </div>
+                  <div class="cardDescription">
+                    <h6 class="cardHeading heading6Black">
+                      STEFANOS TSITSIPAS
+                    </h6>
+                    <p class="cardPara workCardPara">
+                      Web design + WordPress development for a world-renowned
+                      athlete
+                    </p>
+                  </div>
+                </a>
               </div>
 
               <div class="workCardBox">
-                <a href="#" class="cardLink"></a>
-                <div class="cardImageBox">
-                  <img
-                    src="img/chiaSmash_img.jpg"
-                    alt="Chia Smash"
-                    class="cardImage"
-                  />
-                </div>
-                <div class="cardDescription">
-                  <h6 class="cardHeading heading6Black">
-                    <a
-                      href="#"
-                      style="text-decoration: none; color: var(--black-0)"
-                      >Chia Smash</a
-                    >
-                  </h6>
-                  <p class="cardPara workCardPara">
-                    Web design + Shopify development for a deliciously
-                    nutritious jam brand
-                  </p>
-                </div>
+                <a href="#" class="cardLink">
+                  <div class="cardImageBox">
+                    <img
+                      src="img/chiaSmash_img.jpg"
+                      alt="Chia Smash"
+                      class="cardImage"
+                    />
+                  </div>
+                  <div class="cardDescription">
+                    <h6 class="cardHeading heading6Black">Chia Smash</h6>
+                    <p class="cardPara workCardPara">
+                      Web design + Shopify development for a deliciously
+                      nutritious jam brand
+                    </p>
+                  </div>
+                </a>
               </div>
 
               <div class="workCardBox">
-                <a href="#" class="cardLink"></a>
-                <div class="cardImageBox">
-                  <img
-                    src="img/baldMan_img.jpg"
-                    alt="bald Man"
-                    class="cardImage"
-                  />
-                </div>
-                <div class="cardDescription">
-                  <h6 class="cardHeading heading6Black">
-                    <a
-                      href="#"
-                      style="text-decoration: none; color: var(--black-0)"
-                      >Frederick Benjamin</a
-                    >
-                  </h6>
-                  <p class="cardPara workCardPara">
-                    Web design + Shopify development for a natural grooming
-                    brand for men of color
-                  </p>
-                </div>
+                <a href="#" class="cardLink">
+                  <div class="cardImageBox">
+                    <img
+                      src="img/baldMan_img.jpg"
+                      alt="bald Man"
+                      class="cardImage"
+                    />
+                  </div>
+                  <div class="cardDescription">
+                    <h6 class="cardHeading heading6Black">
+                      Frederick Benjamin
+                    </h6>
+                    <p class="cardPara workCardPara">
+                      Web design + Shopify development for a natural grooming
+                      brand for men of color
+                    </p>
+                  </div>
+                </a>
               </div>
 
               <div class="workCardBox">
-                <a href="#" class="cardLink"></a>
-                <div class="cardImageBox">
-                  <img src="img/cycle_img.jpg" alt="Cycle" class="cardImage" />
-                </div>
-                <div class="cardDescription">
-                  <h6 class="cardHeading heading6Black">
-                    <a
-                      href="#"
-                      style="text-decoration: none; color: var(--black-0)"
-                      >BESV</a
-                    >
-                  </h6>
-                  <p class="cardPara workCardPara">
-                    Web design for an international electric bike company
-                  </p>
-                </div>
+                <a href="#" class="cardLink">
+                  <div class="cardImageBox">
+                    <img
+                      src="img/cycle_img.jpg"
+                      alt="Cycle"
+                      class="cardImage"
+                    />
+                  </div>
+                  <div class="cardDescription">
+                    <h6 class="cardHeading heading6Black">BESV</h6>
+                    <p class="cardPara workCardPara">
+                      Web design for an international electric bike company
+                    </p>
+                  </div>
+                </a>
               </div>
 
               <div class="workCardBox">
-                <a href="#" class="cardLink"></a>
-                <div class="cardImageBox">
-                  <img
-                    src="img/elderFlower_img.jpg"
-                    alt="elder flower"
-                    class="cardImage"
-                  />
-                </div>
-                <div class="cardDescription">
-                  <h6 class="cardHeading heading6Black">
-                    <a
-                      href="#"
-                      style="text-decoration: none; color: var(--black-0)"
-                      >Elder Flower</a
-                    >
-                  </h6>
-                  <p class="cardPara workCardPara">
-                    Web design + Shopify development for a mushroom-infused
-                    skincare brand
-                  </p>
-                </div>
+                <a href="#" class="cardLink">
+                  <div class="cardImageBox">
+                    <img
+                      src="img/elderFlower_img.jpg"
+                      alt="elder flower"
+                      class="cardImage"
+                    />
+                  </div>
+                  <div class="cardDescription">
+                    <h6 class="cardHeading heading6Black">Elder Flower</h6>
+                    <p class="cardPara workCardPara">
+                      Web design + Shopify development for a mushroom-infused
+                      skincare brand
+                    </p>
+                  </div>
+                </a>
               </div>
 
               <div class="workCardBox">
-                <a href="#" class="cardLink"></a>
-                <div class="cardImageBox">
-                  <img
-                    src="img/child_img.jpg"
-                    alt="child life"
-                    class="cardImage"
-                  />
-                </div>
-                <div class="cardDescription">
-                  <h6 class="cardHeading heading6Black">
-                    <a
-                      href="#"
-                      style="text-decoration: none; color: var(--black-0)"
-                      >Jnr.Life</a
-                    >
-                  </h6>
-                  <p class="cardPara workCardPara">
-                    Web design + Shopify development for an Australian based
-                    children's play brand
-                  </p>
-                </div>
+                <a href="#" class="cardLink">
+                  <div class="cardImageBox">
+                    <img
+                      src="img/child_img.jpg"
+                      alt="child life"
+                      class="cardImage"
+                    />
+                  </div>
+                  <div class="cardDescription">
+                    <h6 class="cardHeading heading6Black">Jnr.Life</h6>
+                    <p class="cardPara workCardPara">
+                      Web design + Shopify development for an Australian based
+                      children's play brand
+                    </p>
+                  </div>
+                </a>
               </div>
 
               <div class="workCardBox">
-                <a href="#" class="cardLink"></a>
-                <div class="cardImageBox">
-                  <img
-                    src="img/elephant_img.jpg"
-                    alt="Elephant"
-                    class="cardImage"
-                  />
-                </div>
-                <div class="cardDescription">
-                  <h6 class="cardHeading heading6Black">
-                    <a
-                      href="#"
-                      style="text-decoration: none; color: var(--black-0)"
-                      >Elemotion</a
-                    >
-                  </h6>
-                  <p class="cardPara workCardPara">
-                    Web design + WordPress development for a wildlife non-profit
-                  </p>
-                </div>
+                <a href="#" class="cardLink">
+                  <div class="cardImageBox">
+                    <img
+                      src="img/elephant_img.jpg"
+                      alt="Elephant"
+                      class="cardImage"
+                    />
+                  </div>
+                  <div class="cardDescription">
+                    <h6 class="cardHeading heading6Black">Elemotion</h6>
+                    <p class="cardPara workCardPara">
+                      Web design + WordPress development for a wildlife
+                      non-profit
+                    </p>
+                  </div>
+                </a>
               </div>
 
               <div class="workCardBox">
-                <a href="#" class="cardLink"></a>
-                <div class="cardImageBox">
-                  <img
-                    src="img/baldGirl_img.jpg"
-                    alt="bald girl"
-                    class="cardImage"
-                  />
-                </div>
-                <div class="cardDescription">
-                  <h6 class="cardHeading heading6Black">
-                    <a
-                      href="#"
-                      style="text-decoration: none; color: var(--black-0)"
-                      >Oluwa</a
-                    >
-                  </h6>
-                  <p class="cardPara workCardPara">
-                    Web design + Shopify development for a culture-forward
-                    sportswear brand
-                  </p>
-                </div>
+                <a href="#" class="cardLink">
+                  <div class="cardImageBox">
+                    <img
+                      src="img/baldGirl_img.jpg"
+                      alt="bald girl"
+                      class="cardImage"
+                    />
+                  </div>
+                  <div class="cardDescription">
+                    <h6 class="cardHeading heading6Black">Oluwa</h6>
+                    <p class="cardPara workCardPara">
+                      Web design + Shopify development for a culture-forward
+                      sportswear brand
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -517,7 +603,20 @@
               <div class="marketingCard cardBlack">
                 <div class="cardItems">
                   <div class="cardIcon">
-                    <i aria-hidden="true" class="fal fa-desktop"></i>
+                    <svg
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M13 20v-16l-5 5"></path>
+                    </svg>
                   </div>
                   <h5 class="cardHeading heading5White">
                     <span>Join & Request</span>
@@ -534,7 +633,22 @@
               <div class="marketingCard cardNeon">
                 <div class="cardItems">
                   <div class="cardIcon">
-                    <i aria-hidden="true" class="fal fa-desktop"></i>
+                    <svg
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                        d="M8 8a4 4 0 1 1 8 0c0 1.098 -.564 2.025 -1.159 2.815l-6.841 9.185h8"
+                      ></path>
+                    </svg>
                   </div>
                   <h5 class="cardHeading heading5Black">
                     <span>Manage & Collaborate</span>
@@ -551,7 +665,21 @@
               <div class="marketingCard cardBlack">
                 <div class="cardItems">
                   <div class="cardIcon">
-                    <i aria-hidden="true" class="fal fa-desktop"></i>
+                    <svg
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M12 12a4 4 0 1 0 -4 -4"></path>
+                      <path d="M8 16a4 4 0 1 0 4 -4"></path>
+                    </svg>
                   </div>
                   <h5 class="cardHeading heading5White">
                     <span>Design & Build</span>
@@ -568,7 +696,20 @@
               <div class="marketingCard cardNeon">
                 <div class="cardItems">
                   <div class="cardIcon">
-                    <i aria-hidden="true" class="fal fa-desktop"></i>
+                    <svg
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M15 20v-15l-8 11h10"></path>
+                    </svg>
                   </div>
                   <h5 class="cardHeading heading5Black">
                     <span>Launch & Grow</span>
@@ -589,10 +730,12 @@
       <section class="scrollImage">
         <div class="scrollImageContainer">
           <div class="scrollImageBox">
-            <div class="scrollImageOne">
+            <div class="scrollImageThree">
+              <img src="img/slide3.png" alt="scroll Image 1" />
               <img src="img/slide3.png" alt="scroll Image 1" />
             </div>
-            <div class="scrollImageTwo">
+            <div class="scrollImageFour">
+              <img src="img/slide4.png" alt="scroll Image 2" />
               <img src="img/slide4.png" alt="scroll Image 2" />
             </div>
           </div>
@@ -612,6 +755,15 @@
           </div>
         </div>
       </section>
+
+      <section class="booking">
+        <div class="bookingContainer">
+          <div class="bookingLeft"></div>
+        </div>
+      </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

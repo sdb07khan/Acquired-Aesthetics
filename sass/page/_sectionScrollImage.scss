@@ -1,7 +1,36 @@
 .scrollImage {
   .scrollImageContainer {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 120vh;
+
     .scrollImageBox {
-      overflow-x: hidden;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      // gap: 4rem;
+      object-fit: cover;
+      margin-left: 0;
+
+      .scrollImageOne {
+        display: flex;
+      }
+
+      .scrollImageTwo {
+        display: flex;
+      }
+
+      .scrollImageThree {
+        display: flex;
+      }
+
+      .scrollImageFour {
+        display: flex;
+      }
     }
   }
 
@@ -27,8 +56,12 @@
   .runningLogo {
     overflow-x: hidden;
     padding-bottom: 10rem;
+    width: 100%;
+    display: flex;
+    transition: 300ms ease;
 
     .runningLogoBox {
+      animation: marquee 20s linear infinite;
     }
   }
 }
