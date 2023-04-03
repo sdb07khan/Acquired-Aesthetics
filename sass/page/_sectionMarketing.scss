@@ -11,6 +11,8 @@
       top: 10rem;
 
       &__heading {
+        overflow: hidden;
+        display: block;
       }
 
       &__description {

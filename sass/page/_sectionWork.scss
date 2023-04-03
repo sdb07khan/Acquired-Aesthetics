@@ -18,16 +18,16 @@
 
     .workCardSlideContainer {
       position: relative;
-      height: 90vh;
+      height: 410vh;
 
       .workCardSlideBox {
         position: absolute;
         left: 0;
         top: -10rem;
         width: 100%;
-        overflow-x: hidden;
-        overflow-y: hidden;
+        overflow: hidden;
         display: flex;
+        right: 0;
 
         .workCardBox {
           min-width: 35rem;
@@ -42,7 +42,7 @@
           }
 
           &:nth-of-type(2n) {
-            transform: translateY(6rem);
+            transform: translateY(4rem);
           }
 
           .cardLink {

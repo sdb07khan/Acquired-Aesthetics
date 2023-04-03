@@ -95,7 +95,7 @@ body {
 
 .heading6Black {
   font-family: var(--primary-font);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
   text-transform: uppercase;
   color: var(--black-0);
@@ -119,7 +119,7 @@ body {
 
 .workCardPara {
   font-family: var(--primary-font);
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   font-weight: 500;
   color: var(--black-0); }
 
@@ -245,6 +245,9 @@ body {
     max-width: 60%;
     position: sticky;
     top: 10rem; }
+    .marketing .marketingContainer .marketingStrategy__heading {
+      overflow: hidden;
+      display: block; }
   .marketing .marketingContainer .marketingCardContainer .marketingCardBox .marketingCard {
     margin-bottom: 1rem;
     border-radius: 10px;
@@ -329,15 +332,15 @@ body {
 
 .ourWork .ourWorkContainer .workCardSlideContainer {
   position: relative;
-  height: 90vh; }
+  height: 410vh; }
   .ourWork .ourWorkContainer .workCardSlideContainer .workCardSlideBox {
     position: absolute;
     left: 0;
     top: -10rem;
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    display: flex; }
+    overflow: hidden;
+    display: flex;
+    right: 0; }
     .ourWork .ourWorkContainer .workCardSlideContainer .workCardSlideBox .workCardBox {
       min-width: 35rem;
       margin-left: 4rem; }
@@ -346,7 +349,7 @@ body {
       .ourWork .ourWorkContainer .workCardSlideContainer .workCardSlideBox .workCardBox:hover .cardImage {
         transform: scale(1.4); }
       .ourWork .ourWorkContainer .workCardSlideContainer .workCardSlideBox .workCardBox:nth-of-type(2n) {
-        transform: translateY(6rem); }
+        transform: translateY(4rem); }
       .ourWork .ourWorkContainer .workCardSlideContainer .workCardSlideBox .workCardBox .cardLink {
         text-decoration: none; }
       .ourWork .ourWorkContainer .workCardSlideContainer .workCardSlideBox .workCardBox .cardImageBox {
