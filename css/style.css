@@ -245,9 +245,11 @@ body {
     max-width: 60%;
     position: sticky;
     top: 10rem; }
-    .marketing .marketingContainer .marketingStrategy__heading {
-      overflow: hidden;
-      display: block; }
+    .marketing .marketingContainer .marketingStrategy .line {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+    .marketing .marketingContainer .marketingStrategy .char {
+      transform: translateY(10rem);
+      transition: all 0.1s; }
   .marketing .marketingContainer .marketingCardContainer .marketingCardBox .marketingCard {
     margin-bottom: 1rem;
     border-radius: 10px;
@@ -271,11 +273,47 @@ body {
           height: 5rem;
           width: 5rem; }
 
+.marketing .marketingContainer2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 5rem 8%; }
+  .marketing .marketingContainer2 .marketingStrategy {
+    max-width: 60%;
+    position: sticky;
+    top: 10rem; }
+    .marketing .marketingContainer2 .marketingStrategy .line {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+    .marketing .marketingContainer2 .marketingStrategy .char {
+      transform: translateY(10rem);
+      transition: all 0.1s; }
+  .marketing .marketingContainer2 .marketingCardContainer .marketingCardBox .marketingCard {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    transform: scale(0.95);
+    transition: all 0.3s ease-in; }
+    .marketing .marketingContainer2 .marketingCardContainer .marketingCardBox .marketingCard:hover {
+      transform: scale(1); }
+    .marketing .marketingContainer2 .marketingCardContainer .marketingCardBox .marketingCard .cardItems {
+      padding: 4rem; }
+      .marketing .marketingContainer2 .marketingCardContainer .marketingCardBox .marketingCard .cardItems .cardIcon {
+        background-color: var(--white-0);
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        font-size: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem; }
+        .marketing .marketingContainer2 .marketingCardContainer .marketingCardBox .marketingCard .cardItems .cardIcon svg {
+          height: 5rem;
+          width: 5rem; }
+
 .scrollImage .scrollImageContainer {
   display: flex;
   align-items: center;
-  overflow: hidden;
-  height: 120vh; }
+  overflow: hidden; }
   .scrollImage .scrollImageContainer .scrollImageBox {
     width: 100%;
     height: auto;
@@ -305,7 +343,33 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
+  .scrollImage .descriptionBox .line {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    text-align: center !important; }
+  .scrollImage .descriptionBox .char {
+    transform: translateY(10rem);
+    transition: all 0.1s; }
   .scrollImage .descriptionBox .descriptionPara {
+    padding: 3rem 10%; }
+
+.scrollImage .descriptionBox2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+  margin-top: 8rem;
+  margin-bottom: 4rem; }
+  .scrollImage .descriptionBox2 .descriptionHeading2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .scrollImage .descriptionBox2 .line {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    text-align: center !important; }
+  .scrollImage .descriptionBox2 .char {
+    transform: translateY(10rem);
+    transition: all 0.1s; }
+  .scrollImage .descriptionBox2 .descriptionPara {
     padding: 3rem 10%; }
 
 .scrollImage .runningLogo {

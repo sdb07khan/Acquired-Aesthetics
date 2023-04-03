@@ -71,36 +71,6 @@ ScrollTrigger.create({
   scrub: 1,
 });
 
-//////////////////////////////////////////////////////////////
-// text reveal animation HIGHLIGHT
-
-// import gsap from "gsap-trial";
-
-// import { SplitText } from "gsap/SplitText";
-
-// gsap.registerPlugin(SplitText);
-
-// let mySplitText = new SplitText(".marketingStrategy__heading", {
-//   type: "chars",
-// });
-
-// let chars = mySplitText.chars;
-
-// function splitText() {
-//   const myText = document.getElementById("myText");
-//   const mySplitText = new SplitText(myText, { type: "chars" });
-// }
-
-// function animateText() {
-//   const mySplitText = new SplitText("#myText", { type: "chars" });
-//   gsap.to(mySplitText.chars, {
-//     duration: 1,
-//     opacity: 0,
-//     stagger: 0.1,
-//     ease: "power2.out",
-//   });
-// }
-
 /////////////////////////////////////////////////////////////
 // work section HIGHLIGHT (pin & horizontal scroll)
 
@@ -138,4 +108,65 @@ ScrollTrigger.create({
   trigger: ".workButton",
   pin: true,
   end: "bottom 0%",
+});
+
+//////////////////////////////////////////////////////////////
+// text reveal animation for marketing section HIGHLIGHT
+
+const myText = new SplitType(".marketingStrategy__heading");
+const myText2 = new SplitType(".marketingStrategy__heading2");
+
+const textReveal = gsap.timeline();
+
+textReveal.to(".char", {
+  y: 0,
+  stagger: 0.05,
+  delay: 0.1,
+  duration: 0.2,
+});
+
+ScrollTrigger.create({
+  animation: textReveal,
+  trigger: ".marketingContainer",
+  Start: "50% 100%",
+  end: "+=1000",
+  scrub: 1,
+});
+
+ScrollTrigger.create({
+  animation: textReveal,
+  trigger: ".marketingContainer2",
+  Start: "50% 100%",
+  end: "top 20%",
+  scrub: 1,
+});
+
+//////////////////////////////////////////////////////////////
+// text reveal animation for scroll image section HIGHLIGHT
+
+const scrollText = new SplitType(".descriptionHeading");
+const scrollText2 = new SplitType(".descriptionHeading2");
+
+const textRevealScrollSec = gsap.timeline();
+
+textRevealScrollSec.to(".char", {
+  y: 0,
+  delay: 0.1,
+  duration: 0.1,
+});
+
+ScrollTrigger.create({
+  animation: textRevealScrollSec,
+  trigger: ".descriptionBox",
+  Start: "top 20%",
+  end: "bottom 100%",
+  scrub: 1,
+});
+
+ScrollTrigger.create({
+  animation: textRevealScrollSec,
+  trigger: ".descriptionBox2",
+  Start: "top 20%",
+  end: "bottom 100%",
+  scrub: 1,
 });
