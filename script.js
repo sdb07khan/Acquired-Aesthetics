@@ -90,11 +90,11 @@ ScrollTrigger.create({
 });
 
 // this is for the scroll animation
-const container = document.querySelector(".workCardSlideBox");
+const container = document.querySelector(".ourWorkContainer");
 const cards = gsap.utils.toArray(".workCardBox");
 
 let scrollTween = gsap.to(cards, {
-  xPercent: -73 * (cards.length - 1),
+  xPercent: -75 * (cards.length - 1),
   ease: "none",
   scrollTrigger: {
     trigger: container,
@@ -102,12 +102,6 @@ let scrollTween = gsap.to(cards, {
     scrub: 1,
     end: "+=2000",
   },
-});
-
-ScrollTrigger.create({
-  trigger: ".workButton",
-  pin: true,
-  end: "bottom 0%",
 });
 
 //////////////////////////////////////////////////////////////

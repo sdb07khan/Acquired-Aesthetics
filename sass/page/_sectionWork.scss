@@ -1,29 +1,32 @@
 .ourWork {
-  .ourWorkContainer {
-    .headingBox {
-      width: 100%;
-      display: flex;
-      justify-content: center;
+  position: relative;
 
-      .workHeading {
-        font-family: var(--heading-font);
-        font-weight: 600;
-        font-size: 30rem;
-        color: var(--black-0);
-        text-transform: uppercase;
-        line-height: 0.9;
-        letter-spacing: -0.5rem;
-      }
+  .headingBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -15rem;
+    left: 0;
+
+    .workHeading {
+      font-family: var(--heading-font);
+      font-weight: 600;
+      font-size: 30rem;
+      color: var(--black-0);
+      text-transform: uppercase;
+      line-height: 0.9;
+      letter-spacing: -0.5rem;
     }
+  }
+  .ourWorkContainer {
+    position: relative;
 
     .workCardSlideContainer {
-      position: relative;
-      height: 410vh;
-
       .workCardSlideBox {
         position: absolute;
         left: 0;
-        top: -10rem;
+        top: 0rem;
         width: 100%;
         height: 100vh;
         overflow: hidden;
@@ -95,9 +98,11 @@
     }
 
     .workButton {
+      height: 110vh;
       width: 100%;
       display: flex;
       justify-content: center;
+      align-items: flex-end;
 
       &__link {
       }
