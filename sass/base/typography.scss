@@ -18,6 +18,16 @@
   line-height: 1;
 }
 
+.headingWhiteMedium {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 14rem;
+  color: var(--white-0);
+  text-transform: uppercase;
+  letter-spacing: -0.5rem;
+  line-height: 1;
+}
+
 .headingHollow {
   font-family: var(--heading-font);
   font-weight: 600;
@@ -38,6 +48,18 @@
   text-transform: uppercase;
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: var(--black-0);
+  letter-spacing: -0.5rem;
+  line-height: 1;
+}
+
+.headingHollowMediumWhite {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 14rem;
+  color: transparent;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: var(--white-0);
   letter-spacing: -0.5rem;
   line-height: 1;
 }
@@ -67,25 +89,14 @@
   text-decoration: none;
 }
 
-.cardParaBlack {
+.heading6Neon {
   font-family: var(--primary-font);
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--black-0);
-  padding: 1rem 0;
-}
-
-.cardParaWhite {
-  font-family: var(--primary-font);
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--white-0);
-  padding: 1rem 0;
-}
-
-.workCardPara {
-  font-family: var(--primary-font);
-  font-size: 2.6rem;
+  font-size: 1.4rem;
   font-weight: 500;
-  color: var(--black-0);
+  text-transform: uppercase;
+  color: var(--neon-0);
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
 }

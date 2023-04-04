@@ -15,6 +15,7 @@ const tl = gsap.timeline();
 
 tl.to(".scrollImageOne", {
   x: "-100vw",
+  scale: 0.8,
   duration: 8,
 });
 
@@ -30,6 +31,7 @@ const tl2 = gsap.timeline();
 
 tl2.from(".scrollImageTwo", {
   x: "-100vw",
+  scale: 0.8,
   duration: 8,
 });
 
@@ -45,6 +47,7 @@ const tl3 = gsap.timeline();
 
 tl3.to(".scrollImageThree", {
   x: "-100vw",
+  scale: 0.8,
   duration: 8,
 });
 
@@ -52,7 +55,7 @@ ScrollTrigger.create({
   animation: tl3,
   trigger: ".scrollImageThree",
   Start: "top bottom",
-  end: "bottom -20%",
+  end: "+=5000",
   scrub: 1,
 });
 
@@ -60,6 +63,7 @@ const tl4 = gsap.timeline();
 
 tl4.from(".scrollImageFour", {
   x: "-100vw",
+  scale: 0.8,
   duration: 8,
 });
 
@@ -67,7 +71,7 @@ ScrollTrigger.create({
   animation: tl4,
   trigger: ".scrollImageFour",
   Start: "top bottom",
-  end: "bottom -20%",
+  end: "+=5000",
   scrub: 1,
 });
 
@@ -160,6 +164,26 @@ ScrollTrigger.create({
 ScrollTrigger.create({
   animation: textRevealScrollSec,
   trigger: ".descriptionBox2",
+  Start: "top 20%",
+  end: "bottom 100%",
+  scrub: 1,
+});
+
+// footer text reveal animation for scroll image section HIGHLIGHT
+
+const footerScrollText = new SplitType(".collaborate__heading");
+
+const footerScrollSec = gsap.timeline();
+
+footerScrollSec.to(".word", {
+  y: 0,
+  delay: 0.1,
+  duration: 0.1,
+});
+
+ScrollTrigger.create({
+  animation: footerScrollSec,
+  trigger: ".collaborate__heading",
   Start: "top 20%",
   end: "bottom 100%",
   scrub: 1,

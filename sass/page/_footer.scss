@@ -1,0 +1,107 @@
+.footer {
+  background-color: var(--black-0);
+
+  .footerContainer {
+    .collaborate {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5% 10%;
+
+      &__h6 {
+      }
+
+      &__heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .line {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        text-align: center !important;
+      }
+
+      .word {
+        transform: translateY(10rem);
+        transition: all 0.1s;
+      }
+
+      &__description {
+        padding-top: 4rem;
+        padding-bottom: 6rem;
+      }
+
+      &__button--link {
+        padding: 2rem 3rem;
+        font-size: 1.4rem;
+
+        &:hover {
+          background-color: var(--white-0);
+          color: var(--black-0);
+        }
+      }
+    }
+
+    .footerListContainer {
+      width: 100%;
+      padding: 5% 0;
+
+      .footerColumnBox {
+        display: flex;
+        justify-content: space-between;
+        gap: 12rem;
+        padding: 0 14%;
+
+        .footerLogoBox {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .footerLogo {
+            .footerLogoImg {
+              height: 5rem;
+            }
+          }
+
+          .copyrightBox {
+            .copyrightPara {
+              font-family: var(--primary-font);
+              font-size: 1.3rem;
+              color: var(--white-0);
+            }
+          }
+        }
+
+        .footerListBox {
+          .footerList {
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem;
+
+            a {
+              text-decoration: none;
+
+              li {
+                font-family: var(--primary-font);
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: var(--white-0);
+                text-transform: uppercase;
+                list-style: none;
+                letter-spacing: 0.1rem;
+                transition: all 0.1s ease;
+
+                &:hover {
+                  color: var(--neon-0);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

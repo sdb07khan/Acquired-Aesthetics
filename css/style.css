@@ -25,7 +25,10 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: var(--white-0); }
+  background-color: var(--white-0);
+  width: 100%;
+  max-width: 180rem;
+  margin-inline: auto; }
 
 .cardBlack {
   background-color: var(--black-0); }
@@ -41,6 +44,34 @@ body {
   padding-bottom: 4rem;
   color: var(--black-0); }
 
+.cardParaBlack {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--black-0);
+  padding: 1rem 0; }
+
+.cardParaWhite {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--white-0);
+  padding: 1rem 0; }
+
+.workCardPara {
+  font-family: var(--primary-font);
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: var(--black-0); }
+
+.collaborateParaWhite {
+  font-family: var(--primary-font);
+  font-size: 2.4rem;
+  font-weight: 300;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  color: var(--white-0); }
+
 .headingBlack {
   font-family: var(--heading-font);
   font-weight: 600;
@@ -55,6 +86,15 @@ body {
   font-weight: 600;
   font-size: 10rem;
   color: var(--black-0);
+  text-transform: uppercase;
+  letter-spacing: -0.5rem;
+  line-height: 1; }
+
+.headingWhiteMedium {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 14rem;
+  color: var(--white-0);
   text-transform: uppercase;
   letter-spacing: -0.5rem;
   line-height: 1; }
@@ -81,6 +121,17 @@ body {
   letter-spacing: -0.5rem;
   line-height: 1; }
 
+.headingHollowMediumWhite {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 14rem;
+  color: transparent;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: var(--white-0);
+  letter-spacing: -0.5rem;
+  line-height: 1; }
+
 .heading5White {
   font-family: var(--primary-font);
   font-size: 3rem;
@@ -103,25 +154,16 @@ body {
   padding-bottom: 1rem;
   text-decoration: none; }
 
-.cardParaBlack {
+.heading6Neon {
   font-family: var(--primary-font);
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--black-0);
-  padding: 1rem 0; }
-
-.cardParaWhite {
-  font-family: var(--primary-font);
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--white-0);
-  padding: 1rem 0; }
-
-.workCardPara {
-  font-family: var(--primary-font);
-  font-size: 2.6rem;
+  font-size: 1.4rem;
   font-weight: 500;
-  color: var(--black-0); }
+  text-transform: uppercase;
+  color: var(--neon-0);
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-decoration: none;
+  letter-spacing: 0.1rem; }
 
 .buttonBlack {
   font-family: var(--primary-font);
@@ -147,13 +189,77 @@ body {
   border-radius: 30px;
   transition: all 0.2s;
   font-family: var(--primary-font);
-  font-size: 1.4rem;
-  font-weight: 800;
+  font-size: 1.2rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px; }
   .buttonNeonSlim:hover {
     background-color: var(--black-0);
     color: var(--white-0); }
+
+.footer {
+  background-color: var(--black-0); }
+  .footer .footerContainer .collaborate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 10%; }
+    .footer .footerContainer .collaborate__heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .footer .footerContainer .collaborate .line {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      text-align: center !important; }
+    .footer .footerContainer .collaborate .word {
+      transform: translateY(10rem);
+      transition: all 0.1s; }
+    .footer .footerContainer .collaborate__description {
+      padding-top: 4rem;
+      padding-bottom: 6rem; }
+    .footer .footerContainer .collaborate__button--link {
+      padding: 2rem 3rem;
+      font-size: 1.4rem; }
+      .footer .footerContainer .collaborate__button--link:hover {
+        background-color: var(--white-0);
+        color: var(--black-0); }
+  .footer .footerContainer .footerListContainer {
+    width: 100%;
+    padding: 5% 0; }
+    .footer .footerContainer .footerListContainer .footerColumnBox {
+      display: flex;
+      justify-content: space-between;
+      gap: 12rem;
+      padding: 0 14%; }
+      .footer .footerContainer .footerListContainer .footerColumnBox .footerLogoBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .footer .footerContainer .footerListContainer .footerColumnBox .footerLogoBox .footerLogo .footerLogoImg {
+          height: 5rem; }
+        .footer .footerContainer .footerListContainer .footerColumnBox .footerLogoBox .copyrightBox .copyrightPara {
+          font-family: var(--primary-font);
+          font-size: 1.3rem;
+          color: var(--white-0); }
+      .footer .footerContainer .footerListContainer .footerColumnBox .footerListBox .footerList {
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem; }
+        .footer .footerContainer .footerListContainer .footerColumnBox .footerListBox .footerList a {
+          text-decoration: none; }
+          .footer .footerContainer .footerListContainer .footerColumnBox .footerListBox .footerList a li {
+            font-family: var(--primary-font);
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--white-0);
+            text-transform: uppercase;
+            list-style: none;
+            letter-spacing: 0.1rem;
+            transition: all 0.1s ease; }
+            .footer .footerContainer .footerListContainer .footerColumnBox .footerListBox .footerList a li:hover {
+              color: var(--neon-0); }
 
 .header {
   position: fixed;
@@ -311,7 +417,7 @@ body {
           width: 5rem; }
 
 .scrollImage {
-  padding-bottom: 15%; }
+  padding-bottom: 5%; }
   .scrollImage .scrollImageContainer {
     display: flex;
     align-items: center;
