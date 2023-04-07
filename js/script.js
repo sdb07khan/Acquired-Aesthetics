@@ -83,7 +83,7 @@ const myWork = gsap.timeline();
 
 myWork.to(".workHeading", {
   scale: "0.8",
-  duration: 8,
+  duration: 10,
 });
 
 ScrollTrigger.create({
