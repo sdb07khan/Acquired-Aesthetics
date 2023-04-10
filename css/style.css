@@ -323,9 +323,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (max-width: 32.5em) {
+      .header .headerContainer .headerBrand .brandTitleLink {
+        display: none; } }
     .header .headerContainer .headerBrand .brandTitleLink .titleImage {
       width: 100%;
       height: 5rem; }
+    .header .headerContainer .headerBrand .brandTitleLinkPhone {
+      display: none; }
+      @media only screen and (max-width: 32.5em) {
+        .header .headerContainer .headerBrand .brandTitleLinkPhone {
+          display: contents; } }
+      .header .headerContainer .headerBrand .brandTitleLinkPhone .titleImagePhone {
+        width: 100%;
+        height: 5rem; }
     .header .headerContainer .headerNav {
       display: flex;
       justify-content: space-between;
