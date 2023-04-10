@@ -5,10 +5,27 @@
     gap: 2rem;
     padding: 5rem 8%;
 
+    @media only screen and (max-width: $bp-largest) {
+      padding: 5rem 2%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column;
+      gap: 16rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 2%;
+    }
+
     .marketingStrategy {
-      max-width: 60%;
+      min-width: 60%;
       position: sticky;
       top: 10rem;
+
+      @media only screen and (max-width: $bp-large) {
+        position: relative;
+      }
 
       &__heading {
       }
@@ -26,7 +43,15 @@
       }
 
       &__button {
+        @media only screen and (max-width: $bp-large) {
+          display: flex;
+          flex-direction: column;
+        }
+
         &--link {
+          @media only screen and (max-width: $bp-large) {
+            text-align: center;
+          }
         }
       }
     }
@@ -82,10 +107,27 @@
     gap: 4rem;
     padding: 5rem 8%;
 
+    @media only screen and (max-width: $bp-largest) {
+      padding: 5rem 2%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column;
+      gap: 16rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 2%;
+    }
+
     .marketingStrategy {
-      max-width: 60%;
+      min-width: 60%;
       position: sticky;
       top: 10rem;
+
+      @media only screen and (max-width: $bp-large) {
+        position: relative;
+      }
 
       &__heading {
       }
@@ -103,7 +145,14 @@
       }
 
       &__button {
+        @media only screen and (max-width: $bp-large) {
+          display: flex;
+          flex-direction: column;
+        }
         &--link {
+          @media only screen and (max-width: $bp-large) {
+            text-align: center;
+          }
         }
       }
     }

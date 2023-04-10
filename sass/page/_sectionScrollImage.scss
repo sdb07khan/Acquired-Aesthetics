@@ -102,6 +102,12 @@
 
     .runningLogoBox {
       animation: marquee 20s linear infinite;
+
+      .allLogos {
+        @media only screen and (max-width: $bp-small) {
+          transform: scale(0.7);
+        }
+      }
     }
   }
 }

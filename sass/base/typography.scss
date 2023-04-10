@@ -16,6 +16,10 @@
   text-transform: uppercase;
   letter-spacing: -0.5rem;
   line-height: 1;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 8rem;
+  }
 }
 
 .headingWhiteMedium {
@@ -26,6 +30,10 @@
   text-transform: uppercase;
   letter-spacing: -0.5rem;
   line-height: 1;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 8rem;
+  }
 }
 
 .headingHollow {
@@ -50,6 +58,10 @@
   -webkit-text-stroke-color: var(--black-0);
   letter-spacing: -0.5rem;
   line-height: 1;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 8rem;
+  }
 }
 
 .headingHollowMediumWhite {
@@ -62,6 +74,10 @@
   -webkit-text-stroke-color: var(--white-0);
   letter-spacing: -0.5rem;
   line-height: 1;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 8rem;
+  }
 }
 
 .heading5White {

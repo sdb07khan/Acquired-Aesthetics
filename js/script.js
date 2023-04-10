@@ -169,7 +169,7 @@ ScrollTrigger.create({
   scrub: 1,
 });
 
-// footer text reveal animation for scroll image section HIGHLIGHT
+// footer text reveal animation  HIGHLIGHT
 
 const footerScrollText = new SplitType(".collaborate__heading");
 
@@ -177,14 +177,14 @@ const footerScrollSec = gsap.timeline();
 
 footerScrollSec.to(".word", {
   y: 0,
-  delay: 0.1,
-  duration: 0.1,
+  stagger: 0.05,
+  duration: 0.3,
 });
 
 ScrollTrigger.create({
   animation: footerScrollSec,
   trigger: ".collaborate__heading",
   Start: "top 20%",
-  end: "bottom 100%",
+  end: "+=200",
   scrub: 1,
 });

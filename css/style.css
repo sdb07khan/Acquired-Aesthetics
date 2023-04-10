@@ -23,6 +23,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   background-color: var(--white-0);
@@ -89,6 +92,9 @@ body {
   text-transform: uppercase;
   letter-spacing: -0.5rem;
   line-height: 1; }
+  @media only screen and (max-width: 32.5em) {
+    .headingBlackMedium {
+      font-size: 8rem; } }
 
 .headingWhiteMedium {
   font-family: var(--heading-font);
@@ -98,6 +104,9 @@ body {
   text-transform: uppercase;
   letter-spacing: -0.5rem;
   line-height: 1; }
+  @media only screen and (max-width: 32.5em) {
+    .headingWhiteMedium {
+      font-size: 8rem; } }
 
 .headingHollow {
   font-family: var(--heading-font);
@@ -120,6 +129,9 @@ body {
   -webkit-text-stroke-color: var(--black-0);
   letter-spacing: -0.5rem;
   line-height: 1; }
+  @media only screen and (max-width: 32.5em) {
+    .headingHollowMedium {
+      font-size: 8rem; } }
 
 .headingHollowMediumWhite {
   font-family: var(--heading-font);
@@ -131,6 +143,9 @@ body {
   -webkit-text-stroke-color: var(--white-0);
   letter-spacing: -0.5rem;
   line-height: 1; }
+  @media only screen and (max-width: 32.5em) {
+    .headingHollowMediumWhite {
+      font-size: 8rem; } }
 
 .heading5White {
   font-family: var(--primary-font);
@@ -205,6 +220,9 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5% 10%; }
+    @media only screen and (max-width: 62.5em) {
+      .footer .footerContainer .collaborate {
+        padding: 5% 2%; } }
     .footer .footerContainer .collaborate__heading {
       display: flex;
       flex-direction: column;
@@ -215,7 +233,7 @@ body {
       text-align: center !important; }
     .footer .footerContainer .collaborate .word {
       transform: translateY(10rem);
-      transition: all 0.1s; }
+      transition: all 0.3s ease-out; }
     .footer .footerContainer .collaborate__description {
       padding-top: 4rem;
       padding-bottom: 6rem; }
@@ -228,38 +246,69 @@ body {
   .footer .footerContainer .footerListContainer {
     width: 100%;
     padding: 5% 0; }
+    @media only screen and (max-width: 37.5em) {
+      .footer .footerContainer .footerListContainer {
+        padding: 8% 0; } }
+    @media only screen and (max-width: 32.5em) {
+      .footer .footerContainer .footerListContainer {
+        padding: 12% 0; } }
     .footer .footerContainer .footerListContainer .footerColumnBox {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       gap: 12rem;
       padding: 0 14%; }
+      @media only screen and (max-width: 62.5em) {
+        .footer .footerContainer .footerListContainer .footerColumnBox {
+          gap: 8rem;
+          padding: 0 12%; } }
+      @media only screen and (max-width: 37.5em) {
+        .footer .footerContainer .footerListContainer .footerColumnBox {
+          flex-direction: column-reverse;
+          align-items: center; } }
+      @media only screen and (max-width: 32.5em) {
+        .footer .footerContainer .footerListContainer .footerColumnBox {
+          gap: 6rem; } }
       .footer .footerContainer .footerListContainer .footerColumnBox .footerLogoBox {
         display: flex;
         flex-direction: column;
         justify-content: space-between; }
+        @media only screen and (max-width: 37.5em) {
+          .footer .footerContainer .footerListContainer .footerColumnBox .footerLogoBox {
+            align-items: center;
+            gap: 2rem; } }
         .footer .footerContainer .footerListContainer .footerColumnBox .footerLogoBox .footerLogo .footerLogoImg {
           height: 5rem; }
         .footer .footerContainer .footerListContainer .footerColumnBox .footerLogoBox .copyrightBox .copyrightPara {
           font-family: var(--primary-font);
           font-size: 1.3rem;
           color: var(--white-0); }
-      .footer .footerContainer .footerListContainer .footerColumnBox .footerListBox .footerList {
+      .footer .footerContainer .footerListContainer .footerColumnBox .footerListBoxContainer {
         display: flex;
-        flex-direction: column;
-        gap: 1.8rem; }
-        .footer .footerContainer .footerListContainer .footerColumnBox .footerListBox .footerList a {
-          text-decoration: none; }
-          .footer .footerContainer .footerListContainer .footerColumnBox .footerListBox .footerList a li {
-            font-family: var(--primary-font);
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: var(--white-0);
-            text-transform: uppercase;
-            list-style: none;
-            letter-spacing: 0.1rem;
-            transition: all 0.1s ease; }
-            .footer .footerContainer .footerListContainer .footerColumnBox .footerListBox .footerList a li:hover {
-              color: var(--neon-0); }
+        gap: 12rem; }
+        @media only screen and (max-width: 32.5em) {
+          .footer .footerContainer .footerListContainer .footerColumnBox .footerListBoxContainer {
+            gap: 6rem;
+            align-items: flex-start; } }
+        .footer .footerContainer .footerListContainer .footerColumnBox .footerListBoxContainer .footerListBox {
+          text-align: center; }
+          .footer .footerContainer .footerListContainer .footerColumnBox .footerListBoxContainer .footerListBox .footerList {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.8rem; }
+            .footer .footerContainer .footerListContainer .footerColumnBox .footerListBoxContainer .footerListBox .footerList a {
+              text-decoration: none; }
+              .footer .footerContainer .footerListContainer .footerColumnBox .footerListBoxContainer .footerListBox .footerList a li {
+                font-family: var(--primary-font);
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: var(--white-0);
+                text-transform: uppercase;
+                list-style: none;
+                letter-spacing: 0.1rem;
+                transition: all 0.1s ease; }
+                .footer .footerContainer .footerListContainer .footerColumnBox .footerListBoxContainer .footerListBox .footerList a li:hover {
+                  color: var(--neon-0); }
 
 .header {
   position: fixed;
@@ -290,10 +339,17 @@ body {
 
 .featured {
   padding: 4rem 8%; }
+  @media only screen and (max-width: 62.5em) {
+    .featured {
+      padding: 4rem 4%; } }
   .featured .featuredContainer {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (max-width: 50em) {
+      .featured .featuredContainer {
+        flex-direction: column;
+        gap: 2rem; } }
     .featured .featuredContainer .featuredTextContainer {
       min-width: 24rem;
       position: relative;
@@ -326,9 +382,10 @@ body {
     max-width: 100rem;
     margin-inline: auto;
     padding: 12rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
+    text-align: center; }
+    @media only screen and (max-width: 32.5em) {
+      .sectionHeading .headingContainer {
+        font-size: 8rem; } }
   .sectionHeading .banner {
     position: absolute;
     bottom: -12rem;
@@ -339,6 +396,19 @@ body {
     overflow: hidden; }
     .sectionHeading .banner:hover {
       transform: scale(1.05); }
+    @media only screen and (max-width: 62.5em) {
+      .sectionHeading .banner {
+        transform: scale(0.8);
+        bottom: -14rem; }
+        .sectionHeading .banner:hover {
+          transform: scale(0.85); } }
+    @media only screen and (max-width: 32.5em) {
+      .sectionHeading .banner {
+        transform: scale(0.6);
+        bottom: -14rem;
+        right: -3rem; }
+        .sectionHeading .banner:hover {
+          transform: scale(0.65); } }
     .sectionHeading .banner .banner__image {
       border-radius: 50%; }
 
@@ -347,15 +417,35 @@ body {
   align-items: flex-start;
   gap: 2rem;
   padding: 5rem 8%; }
+  @media only screen and (max-width: 62.5em) {
+    .marketing .marketingContainer {
+      padding: 5rem 2%; } }
+  @media only screen and (max-width: 50em) {
+    .marketing .marketingContainer {
+      flex-direction: column;
+      gap: 16rem; } }
+  @media only screen and (max-width: 32.5em) {
+    .marketing .marketingContainer {
+      padding: 0 2%; } }
   .marketing .marketingContainer .marketingStrategy {
-    max-width: 60%;
+    min-width: 60%;
     position: sticky;
     top: 10rem; }
+    @media only screen and (max-width: 50em) {
+      .marketing .marketingContainer .marketingStrategy {
+        position: relative; } }
     .marketing .marketingContainer .marketingStrategy .line {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
     .marketing .marketingContainer .marketingStrategy .char {
       transform: translateY(10rem);
       transition: all 0.1s; }
+    @media only screen and (max-width: 50em) {
+      .marketing .marketingContainer .marketingStrategy__button {
+        display: flex;
+        flex-direction: column; } }
+    @media only screen and (max-width: 50em) {
+      .marketing .marketingContainer .marketingStrategy__button--link {
+        text-align: center; } }
   .marketing .marketingContainer .marketingCardContainer .marketingCardBox .marketingCard {
     margin-bottom: 1rem;
     border-radius: 10px;
@@ -384,15 +474,35 @@ body {
   align-items: flex-start;
   gap: 4rem;
   padding: 5rem 8%; }
+  @media only screen and (max-width: 62.5em) {
+    .marketing .marketingContainer2 {
+      padding: 5rem 2%; } }
+  @media only screen and (max-width: 50em) {
+    .marketing .marketingContainer2 {
+      flex-direction: column;
+      gap: 16rem; } }
+  @media only screen and (max-width: 32.5em) {
+    .marketing .marketingContainer2 {
+      padding: 0 2%; } }
   .marketing .marketingContainer2 .marketingStrategy {
-    max-width: 60%;
+    min-width: 60%;
     position: sticky;
     top: 10rem; }
+    @media only screen and (max-width: 50em) {
+      .marketing .marketingContainer2 .marketingStrategy {
+        position: relative; } }
     .marketing .marketingContainer2 .marketingStrategy .line {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
     .marketing .marketingContainer2 .marketingStrategy .char {
       transform: translateY(10rem);
       transition: all 0.1s; }
+    @media only screen and (max-width: 50em) {
+      .marketing .marketingContainer2 .marketingStrategy__button {
+        display: flex;
+        flex-direction: column; } }
+    @media only screen and (max-width: 50em) {
+      .marketing .marketingContainer2 .marketingStrategy__button--link {
+        text-align: center; } }
   .marketing .marketingContainer2 .marketingCardContainer .marketingCardBox .marketingCard {
     margin-bottom: 1rem;
     border-radius: 10px;
@@ -485,6 +595,9 @@ body {
     transition: 300ms ease; }
     .scrollImage .runningLogo .runningLogoBox {
       animation: marquee 20s linear infinite; }
+      @media only screen and (max-width: 32.5em) {
+        .scrollImage .runningLogo .runningLogoBox .allLogos {
+          transform: scale(0.7); } }
 
 .ourWork {
   position: relative; }
@@ -498,7 +611,7 @@ body {
     .ourWork .headingBox .workHeading {
       font-family: var(--heading-font);
       font-weight: 600;
-      font-size: 30rem;
+      font-size: 23vw;
       color: var(--black-0);
       text-transform: uppercase;
       line-height: 0.9;
@@ -531,6 +644,9 @@ body {
           border-radius: 6px;
           overflow: hidden;
           position: relative; }
+          @media only screen and (max-width: 32.5em) {
+            .ourWork .ourWorkContainer .workCardSlideContainer .workCardSlideBox .workCardBox .cardImageBox {
+              height: 65vh; } }
           .ourWork .ourWorkContainer .workCardSlideContainer .workCardSlideBox .workCardBox .cardImageBox::after {
             content: "";
             position: absolute;
@@ -558,3 +674,6 @@ body {
       display: flex;
       justify-content: center;
       align-items: flex-end; }
+      @media only screen and (max-width: 32.5em) {
+        .ourWork .ourWorkContainer .workButton {
+          height: 98vh; } }
