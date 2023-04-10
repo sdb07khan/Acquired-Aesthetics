@@ -177,14 +177,13 @@ const footerScrollSec = gsap.timeline();
 
 footerScrollSec.to(".word", {
   y: 0,
-  stagger: 0.05,
-  duration: 0.3,
+  duration: 0.1,
 });
 
 ScrollTrigger.create({
   animation: footerScrollSec,
   trigger: ".collaborate__heading",
   Start: "top 20%",
-  end: "+=200",
+  end: "bottom 100%",
   scrub: 1,
 });
