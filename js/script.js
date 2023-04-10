@@ -48,14 +48,14 @@ const tl3 = gsap.timeline();
 tl3.to(".scrollImageThree", {
   x: "-100vw",
   scale: 0.8,
-  duration: 8,
+  duration: 2,
 });
 
 ScrollTrigger.create({
   animation: tl3,
   trigger: ".scrollImageThree",
   Start: "top bottom",
-  end: "+=5000",
+  end: "bottom -1000%",
   scrub: 1,
 });
 
@@ -64,14 +64,14 @@ const tl4 = gsap.timeline();
 tl4.from(".scrollImageFour", {
   x: "-100vw",
   scale: 0.8,
-  duration: 8,
+  duration: 2,
 });
 
 ScrollTrigger.create({
   animation: tl4,
   trigger: ".scrollImageFour",
   Start: "top bottom",
-  end: "+=5000",
+  end: "bottom -1000%",
   scrub: 1,
 });
 
