@@ -54,7 +54,6 @@ function animation() {
     Start: "top bottom",
     //  end: "bottom -20%",
     scrub: 1,
-    markers: true,
   });
 
   const tl4 = gsap.timeline();
