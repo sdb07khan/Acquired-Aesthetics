@@ -100,12 +100,19 @@
     display: flex;
     transition: 300ms ease;
 
+    @media only screen and (max-width: $bp-small) {
+      padding-bottom: 15rem;
+    }
+
     .runningLogoBox {
       animation: marquee 20s linear infinite;
 
       .allLogos {
+        height: 150px;
+
         @media only screen and (max-width: $bp-small) {
-          transform: scale(0.7);
+          height: 70px;
+          background-size: contain !important;
         }
       }
     }

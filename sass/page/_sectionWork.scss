@@ -21,17 +21,19 @@
   }
   .ourWorkContainer {
     position: relative;
+    overflow: hidden;
 
     .workCardSlideContainer {
+      overflow: hidden;
+
       .workCardSlideBox {
         position: absolute;
         left: 0;
         top: 0rem;
-        width: 100%;
+        // width: 100%;
         height: 100vh;
         overflow: hidden;
         display: flex;
-        right: 0;
 
         .workCardBox {
           min-width: 35rem;
