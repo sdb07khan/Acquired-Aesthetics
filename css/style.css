@@ -342,6 +342,8 @@ body {
       justify-content: space-between;
       align-items: center;
       gap: 4rem; }
+      .header .headerContainer .headerNav .bookDemo {
+        white-space: nowrap; }
       .header .headerContainer .headerNav .navButton .navButton__link svg {
         stroke-opacity: 0;
         width: 100%;

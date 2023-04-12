@@ -180,7 +180,7 @@ const footerScrollSec = gsap.timeline();
 
 footerScrollSec.to(".word", {
   y: 0,
-  duration: 0.1,
+  duration: 0.4,
 });
 
 ScrollTrigger.create({
