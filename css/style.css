@@ -408,7 +408,8 @@ body {
       overflow: hidden; }
     @media only screen and (max-width: 32.5em) {
       .sectionHeading .headingContainer {
-        font-size: 8rem; } }
+        font-size: 8rem;
+        line-height: 0.7; } }
   .sectionHeading .banner {
     position: absolute;
     bottom: -12rem;
