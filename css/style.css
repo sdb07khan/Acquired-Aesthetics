@@ -232,7 +232,7 @@ body {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
       text-align: center !important; }
     .footer .footerContainer .collaborate .word {
-      transform: translateY(10rem);
+      transform: translateY(14rem);
       transition: all 0.3s ease-out; }
     .footer .footerContainer .collaborate__description {
       padding-top: 4rem;
@@ -395,7 +395,17 @@ body {
     max-width: 100rem;
     margin-inline: auto;
     padding: 12rem 0;
-    text-align: center; }
+    text-align: center;
+    line-height: 0.85; }
+    .sectionHeading .headingContainer .line {
+      overflow: hidden;
+      margin-top: -24px; }
+    .sectionHeading .headingContainer .char {
+      transition: all 0.3s;
+      transform-style: preserve-3d;
+      padding-bottom: 24px;
+      opacity: 0;
+      overflow: hidden; }
     @media only screen and (max-width: 32.5em) {
       .sectionHeading .headingContainer {
         font-size: 8rem; } }

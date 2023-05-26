@@ -7,6 +7,20 @@
     margin-inline: auto;
     padding: 12rem 0;
     text-align: center;
+    line-height: 0.85;
+
+    .line {
+      overflow: hidden;
+      margin-top: -24px;
+    }
+
+    .char {
+      transition: all 0.3s;
+      transform-style: preserve-3d;
+      padding-bottom: 24px;
+      opacity: 0;
+      overflow: hidden;
+    }
 
     @media only screen and (max-width: $bp-small) {
       font-size: 8rem;

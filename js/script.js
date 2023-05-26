@@ -8,6 +8,7 @@ function animation() {
 
   TL.to(".banner__image", { rotate: "+=360", duration: 10, ease: "none" });
 
+  // two images slides on opposite direction on scroll HIGHLIGHT
   const tl = gsap.timeline();
 
   tl.to(".scrollImageOne", {
@@ -73,8 +74,6 @@ function animation() {
   });
 }
 
-// two images slides on opposite direction on scroll HIGHLIGHT
-
 /////////////////////////////////////////////////////////////
 // work section HIGHLIGHT (pin & horizontal scroll)
 
@@ -111,35 +110,47 @@ let scrollTween = gsap.to(".workCardSlideBox", {
 });
 
 //////////////////////////////////////////////////////////////
-// text reveal animation for marketing section HIGHLIGHT
+// text reveal animation for marketing section 1 HIGHLIGHT
 
 const myText = new SplitType(".marketingStrategy__heading");
-const myText2 = new SplitType(".marketingStrategy__heading2");
 
-const textReveal = gsap.timeline();
+const textReveal1 = gsap.timeline({ paused: true });
 
-textReveal.to(".word", {
+textReveal1.to("#marketingHeading1-js .word", {
   y: 0,
   stagger: 0.05,
   delay: 0.1,
-  duration: 0.2,
+  duration: 0.5,
 });
 
 ScrollTrigger.create({
-  animation: textReveal,
+  animation: textReveal1,
   trigger: ".marketingContainer",
-  Start: "50% 100%",
-  end: "+=1000",
-  toggleActions: "play none none reverse",
-  // scrub: 1,
+  start: "top 50%",
+  // end: "60% 10%",
+  toggleActions: "play pause none none",
+});
+
+//////////////////////////////////////////////////////////////
+// text reveal animation for marketing section 2 HIGHLIGHT
+
+const myText2 = new SplitType(".marketingStrategy__heading2");
+
+const textReveal2 = gsap.timeline({ paused: true });
+
+textReveal2.to("#marketingHeading2-js .word", {
+  y: 0,
+  stagger: 0.05,
+  delay: 0.1,
+  duration: 0.5,
 });
 
 ScrollTrigger.create({
-  animation: textReveal,
+  animation: textReveal2,
   trigger: ".marketingContainer2",
-  Start: "50% 100%",
-  end: "top 20%",
-  toggleActions: "play none none reverse",
+  start: "top 50%",
+  // end: "60% 10%",
+  toggleActions: "play pause none none",
 });
 
 //////////////////////////////////////////////////////////////
@@ -150,26 +161,34 @@ const scrollText2 = new SplitType(".descriptionHeading2");
 
 const textRevealScrollSec = gsap.timeline();
 
-textRevealScrollSec.to(".char", {
+textRevealScrollSec.to("#descriptionHeading-js .char", {
   y: 0,
   delay: 0.1,
-  duration: 0.4,
+  duration: 1,
 });
 
 ScrollTrigger.create({
   animation: textRevealScrollSec,
   trigger: ".descriptionBox",
-  Start: "top 20%",
-  end: "bottom 100%",
-  toggleActions: "play none none reverse",
+  start: "top 70%",
+  end: "60% 10%",
+  toggleActions: "play none none none",
+});
+
+const textRevealScrollSec1 = gsap.timeline();
+
+textRevealScrollSec1.to("#descriptionHeading1-js .char", {
+  y: 0,
+  delay: 0.1,
+  duration: 1,
 });
 
 ScrollTrigger.create({
-  animation: textRevealScrollSec,
+  animation: textRevealScrollSec1,
   trigger: ".descriptionBox2",
-  Start: "top 20%",
-  end: "bottom 100%",
-  toggleActions: "play none none reverse",
+  start: "top 70%",
+  end: "60% 10%",
+  toggleActions: "play none none none",
 });
 
 // footer text reveal animation  HIGHLIGHT
@@ -178,15 +197,49 @@ const footerScrollText = new SplitType(".collaborate__heading");
 
 const footerScrollSec = gsap.timeline();
 
-footerScrollSec.to(".word", {
+footerScrollSec.to("#footerHeader-js .word", {
   y: 0,
-  duration: 0.4,
+  duration: 1,
 });
 
 ScrollTrigger.create({
   animation: footerScrollSec,
   trigger: ".collaborate__heading",
-  Start: "top 20%",
+  start: "top 50%",
   end: "bottom 100%",
-  toggleActions: "play none none reverse",
+  toggleActions: "play none none none",
+});
+
+//hero heading animation HIGHLIGHT
+
+const heroHeading = new SplitType("#heroHeading-js");
+
+const heroHeadingReveal = gsap.timeline();
+
+heroHeadingReveal.set("#heroHeading-js .char", {
+  autoAlpha: 0,
+  yPercent: 60,
+  rotateX: 70,
+});
+
+heroHeadingReveal.to(
+  "#heroHeading-js .char",
+  {
+    autoAlpha: 1,
+    rotateX: 0,
+    yPercent: 0,
+    stagger: 0.05,
+    delay: 0.25,
+    duration: 0.8,
+    ease: "expo.out",
+  },
+  0.05
+);
+
+ScrollTrigger.create({
+  animation: heroHeadingReveal,
+  trigger: ".headingContainer",
+  Start: "20%",
+  end: "70% 10%",
+  toggleActions: "play none none none",
 });
